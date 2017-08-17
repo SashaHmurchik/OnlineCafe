@@ -1,0 +1,33 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+}
+.order-table__item-col {
+  padding: 10px 5px;
+  border: 1px solid black;
+}
+.order-table__item-col:first-child {
+  border-left: none;
+}
+.order-table__item-col:last-child {
+  border-right: none;
+}
