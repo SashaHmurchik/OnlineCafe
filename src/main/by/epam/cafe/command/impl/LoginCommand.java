@@ -17,11 +17,10 @@ package by.epam.cafe.command.impl;
 public class LoginCommand extends AbstractCommand {
     private static final String FOODCORT_PATH = ConfigurationManager.getProperty("path.page.foodcorttwo");
     private static final String ADMINCORT_PATH = ConfigurationManager.getProperty("path.page.admincort");
-    private static final String LAST_PATH_ATR = "lastPath";
     private static final String LOGIN_PATH = ConfigurationManager.getProperty("path.page.login");
     private static final String ERROR_LOGIN_PASS_ATR = "errorLoginPassMessage";
     private static final String AUTORIZATION_MARKER = "authorization";
-    private static final String MESSAGE_LOGIN_ERROR = "message.loginerror";
+    private static final String MESSAGE_LOGIN_ERROR = "message.login.error";
 
 
     public LoginCommand(UserReceiver receiver) {
@@ -48,9 +47,9 @@ public class LoginCommand extends AbstractCommand {
             }
         } else {
             String locale = (String)content.getSessionAttributes().get(SessionAtr.LOCALE);
-            content.getRequestAttributes().put(ERROR_LOGIN_PASS_ATR,
+            content.setSessionAttributes(ERROR_LOGIN_PASS_ATR,
                 MessageManager.getManager(locale).getMessage(MESSAGE_LOGIN_ERROR));
-            requestResult = new RequestResult(ConfigurationManager.getProperty(LOGIN_PATH), NavigationType.FORWARD);
+            requestResult = new RequestResult(LOGIN_PATH, NavigationType.REDIRECT);
         }
         return requestResult;
     }
