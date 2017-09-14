@@ -3,6 +3,7 @@
 <html>
     <head>
         <title>Error Page</title>
+        <link rel="icon" href="../fonts/favicon.ico">
     </head>
     <body>
         Request from ${pageContext.errorData.requestURI} is failed

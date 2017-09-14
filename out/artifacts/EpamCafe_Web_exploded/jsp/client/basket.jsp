@@ -15,96 +15,123 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../bootstrap-3.3.7/docs/favicon.ico">
+    <link rel="icon" href="../../fonts/favicon.ico">
 
     <title>Basket</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../../../bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap theme -->
-    <link href="../../../bootstrap-3.3.7/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../../bootstrap-3.3.7/docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="../../../css/theme.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../../bootstrap-3.3.7/docs/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../../bootstrap-3.3.7/docs/assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <style type="text/css">
-        img {
-            width: 120px;
-            height: 120px;
-        }
-    </style>
 </head>
 <body>
     <jsp:include page="/jsp/client/pagepart/header.jsp"/>
-    <div class="row">
-        <div class="col-md-12">
-            <table class="table" >
-                <thead>
-                <tr>
-                    <th><fmt:message key="label.basket.picture" bundle="${rb}"/></th>
-                    <th><fmt:message key="label.basket.name" bundle="${rb}"/></th>
-                    <th><fmt:message key="label.basket.price" bundle="${rb}"/></th>
-                    <th><fmt:message key="label.basket.amount" bundle="${rb}"/></th>
-                    <th><fmt:message key="label.basket.kitchenname" bundle="${rb}"/></th>
-                    <th><fmt:message key="label.basket.description" bundle="${rb}"/></th>
-                    <th></th>
-                </tr>
-                </thead>
-                <tbody>
-                <c:forEach items="${user.basket}" var="dish">
+    <div class="container theme-showcase" role="main">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <c:if test="${not empty sessionScope.makeOrderResult}">
+                    <div class="alert alert-success" role="alert">${sessionScope.makeOrderResult}</div>
+                </c:if>
+                <c:if test="${not empty requestScope.makeOrderResult}">
+                    <div class="alert alert-danger" role="alert">${requestScope.makeOrderResult}</div>
+                </c:if>
+                <c:if test="${not empty sessionScope.makeOrderResult}">
+                    <c:remove var="makeOrderResult" scope="session" />
+                </c:if>
+                <c:if test="${not empty requestScope.makeOrderResult}">
+                    <c:remove var="changeArchiveStatusResult" scope="request" />
+                </c:if>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table" >
+                    <thead>
                     <tr>
-                        <td><img src="/${dish.key.picture}" alt="Картинка блюда"></td>
-                        <td>${dish.key.name}</td>
-                        <td>${dish.key.price}</td>
-                        <td>${dish.value}</td>
-                        <td>${dish.key.kitchen.name}</td>
-                        <td>${dish.key.description}</td>
-                        <td>
-                            <form method="get" action="/controller">
-                                <input type="hidden" name="command" value="removefrombasket"/>
-                                <input type="hidden" name="dish" value="${dish.key.id}"/>
-                                <button type="submit" class="btn btn-success"><fmt:message key="label.foodcort.removefrombasket" bundle="${rb}"/></button>
-                            </form>
-                        </td>
+                        <th><fmt:message key="label.foodcort.picture" bundle="${rb}"/></th>
+                        <th><fmt:message key="label.foodcort.dishname" bundle="${rb}"/></th>
+                        <th><fmt:message key="label.foodcort.category" bundle="${rb}"/></th>
+                        <th><fmt:message key="label.foodcort.kitchen" bundle="${rb}"/></th>
+                        <th><fmt:message key="label.foodcort.description" bundle="${rb}"/></th>
+                        <th><fmt:message key="label.foodcort.price" bundle="${rb}"/></th>
+                        <th><fmt:message key="label.basket.amount" bundle="${rb}"/></th>
+                        <th></th>
                     </tr>
-                </c:forEach>
-                <tr>
-                    <td><strong><fmt:message key="label.basket.totalprice" bundle="${rb}"/> - ${user.basketPrice}</strong></td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
+                    </thead>
+                    <tbody>
+                    <c:forEach items="${sessionScope.user.basket}" var="dish">
+                        <tr>
+                            <td><img src="${dish.key.picture}" alt="Картинка блюда"></td>
+                            <td>${dish.key.name}</td>
+                            <td>${dish.key.category.name}</td>
+                            <td>
+                                <div class="drop dropdown">
+                                    <a class="btn btn-secondary dropdown-toggle" id="${dish.key.kitchen.name}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span>${dish.key.kitchen.name}<span>
+                                    </a>
 
-    </div>
-    <hr/>
-    <div class="row">
-        <div class="col-md-6">
-            <form method="get" action="/controller">
-                <p><fmt:message key="label.basket.selectdate" bundle="${rb}"/></p>
-                    <input type="hidden" name="command" value="makeorder"/>
-                    <input type="date" name="calendar" value="${user.availableForDeliveryDays[1]}"
-                           max="${user.availableForDeliveryDays[2]}" min="${user.availableForDeliveryDays[1]}">
-                    <button type="submit" class="btn btn-success"><fmt:message key="label.basket.makeorder" bundle="${rb}"/></button>
-            </form>
-        </div>
-        <div class="col-md-6">
-            <form method="get" action="/controller">
-                <input type="hidden" name="command" value="showmyorder"/>
-                <button type="submit" class="btn btn-success"><fmt:message key="label.basket.myorder" bundle="${rb}"/></button>
-            </form>
-        </div>
-    </div>
+                                    <div class="dropdown-menu" aria-labelledby="${dish.key.kitchen.name}">
+                                        <table class="table table-striped table-bordered table-condensed">
+                                            <thead>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th><img src="${dish.key.kitchen.picture}" alt="Картинка заведения"></th>
+                                            </tr>
+                                            <tr>
+                                                <th>${dish.key.kitchen.phone}</th>
+                                            </tr>
+                                            <tr>
+                                                <th>${dish.key.kitchen.site}</th>
+                                            </tr>
+                                            <tr>
+                                                <th>${dish.key.kitchen.address}</th>
+                                            </tr>
+                                            <tr>
+                                                <th>${dish.key.kitchen.email}</th>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>${dish.key.description}</td>
+                            <td>${dish.key.price}</td>
+                            <td>${dish.value}</td>
+                            <td>
+                                <form method="get" action="/controller">
+                                    <input type="hidden" name="command" value="removefrombasket"/>
+                                    <input type="hidden" name="dish" value="${dish.key.id}"/>
+                                    <button type="submit" class="btn btn-success"><fmt:message key="label.foodcort.removefrombasket" bundle="${rb}"/></button>
+                                </form>
+                            </td>
+                        </tr>
+                    </c:forEach>
+                    <tr>
+                        <td><strong><fmt:message key="label.basket.totalprice" bundle="${rb}"/> - ${user.basketPrice}</strong></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
 
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-md-6">
+                <form method="get" action="/controller">
+                    <label for="date" ><fmt:message key="label.basket.selectdate" bundle="${rb}"/></label>
+                        <input type="hidden" name="command" value="makeorder"/>
+                        <input type="date" id="date" name="delivery_date" value="${sessionScope.user.availableForDeliveryDays[1]}"
+                               max="${sessionScope.user.availableForDeliveryDays[2]}" min="${sessionScope.user.availableForDeliveryDays[1]}">
+                        <button type="submit" class="btn btn-success" onclick="return confirm('<fmt:message key="label.message.areyousure" bundle="${rb}"/>')"><fmt:message key="label.basket.makeorder" bundle="${rb}"/></button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <form method="get" action="/controller">
+                    <input type="hidden" name="command" value="showmyorder"/>
+                    <button type="submit" class="btn btn-success"><fmt:message key="label.basket.myorder" bundle="${rb}"/></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <jsp:include page="/jsp/client/pagepart/footer.jsp"/>
 </body>
 </html>

@@ -8,6 +8,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="ctg" uri="customtags"%>
 
 <fmt:setLocale value="${locale}" scope="session"/>
 <fmt:setBundle basename="resources.pagecontent" var="rb" />
@@ -21,165 +22,154 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../bootstrap-3.3.7/docs/favicon.ico">
+    <link rel="icon" href="../../fonts/favicon.ico">
 
-    <title>Theme Template for Bootstrap</title>
+    <title>My orders</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../../bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap theme -->
-    <link href="../../bootstrap-3.3.7/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../bootstrap-3.3.7/docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="../../css/theme.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../bootstrap-3.3.7/docs/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../bootstrap-3.3.7/docs/assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <style type="text/css">
-        img {
-            width: 120px;
-            height: 120px;
-        }
-    </style>
 </head>
 
 <body>
-
-<!-- Fixed navbar -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Bootstrap theme</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li>
-                    <form action="/controller">
-                        <input type="hidden" name="command" value="locale">
-                        <input type="submit" class="w3-button" name="locale" value="RU" >
-                        <input type="submit" class="w3-button" name="locale" value="EN">
-                    </form>
-                </li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li class="dropdown-header">Nav header</li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
-</nav>
+<jsp:include page="/jsp/client/pagepart/header.jsp"/>
 
 <div class="container theme-showcase" role="main">
-
-
-    <div class="page-header">
-        <h1>Tables</h1>
-    </div>
-    ${orderFindStatus}
-    <div class="row">
-        <div class="col-md-12">
-            <table class="table">
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Date</th>
-                    <th>DeliveryDate</th>
-                    <th>Price</th>
-                    <th>Dishes</th>
-                </tr>
-                </thead>
-                <tbody>
-                <c:forEach items="${myorders}" var="order">
-                    <tr>
-                        <td>${order.key.id}</td>
-                        <td>${order.key.date}</td>
-                        <td>${order.key.deliveryDate}</td>
-                        <td>${order.key.price}</td>
-                        <td>
-                            <div class="dropdown show">
-                                <a class="btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dishes
-                                </a>
-
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <table class="table">
-                                        <thead>
-                                        <tr>
-                                            <th>Picture</th>
-                                            <th>Name</th>
-                                            <th>Kitchen Name</th>
-                                            <th>Price</th>
-                                            <th>Amount</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <c:forEach items="${order.value}" var="dish">
-                                            <tr>
-                                                <th><img src="/${dish.key.picture}" alt="Картинка блюда"></th>
-                                                <th>${dish.key.name}</th>
-                                                <th>${dish.key.kitchen.name}</th>
-                                                <th>${dish.key.price}</th>
-                                                <th>${dish.value}</th>
-                                            </tr>
-                                        </c:forEach>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                </c:forEach>
-
-                </tbody>
-            </table>
+        <div class="row">
+            <div class="col-md-12 center">
+                <c:if test="${not empty sessionScope.orderFindStatus}">
+                    <div class="alert alert-success" role="alert">${sessionScope.orderFindStatus}</div>
+                </c:if>
+                <c:if test="${not empty sessionScope.deliveryCommandStatus}">
+                    <div class="alert alert-success" role="alert">${sessionScope.deliveryCommandStatus}</div>
+                </c:if>
+                <c:if test="${not empty sessionScope.paidCommandStatus}">
+                    <div class="alert alert-success" role="alert">${sessionScope.paidCommandStatus}</div>
+                </c:if>
+                <c:if test="${not empty sessionScope.orderFindStatus}">
+                    <c:remove var="orderFindStatus" scope="session" />
+                </c:if>
+                <c:if test="${not empty sessionScope.deliveryCommandStatus}">
+                    <c:remove var="deliveryCommandStatus" scope="session" />
+                </c:if>
+                <c:if test="${not empty sessionScope.paidCommandStatus}">
+                    <c:remove var="paidCommandStatus" scope="session" />
+                </c:if>
+            </div>
         </div>
 
-    </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped table-bordered table-condensed">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th><fmt:message key="label.order.paystatus" bundle="${rb}"/></th>
+                        <th><fmt:message key="label.order.deliverystatus" bundle="${rb}"/></th>
+                        <th><fmt:message key="label.order.orderdate" bundle="${rb}"/></th>
+                        <th><fmt:message key="label.order.deliverydate" bundle="${rb}"/></th>
+                        <th><fmt:message key="label.order.price" bundle="${rb}"/></th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <c:forEach items="${requestScope.orderMap}" var="order">
+                        <tr class="first">
+                            <td>
+                                <div class="dropdown show">
+                                    <a class="btn btn-secondary dropdown-toggle" id="${order.key.id}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span><fmt:message key="label.order.dishes" bundle="${rb}"/></span>
+                                    </a>
 
+                                    <div class="dropdown-menu" aria-labelledby="${order.key.id}">
+                                        <table class="table table-striped table-bordered table-condensed">
+                                            <thead>
+                                            <tr>
+                                                <th>Picture</th>
+                                                <th><fmt:message key="label.foodcort.dishname" bundle="${rb}"/></th>
+                                                <th><fmt:message key="label.foodcort.kitchen" bundle="${rb}"/></th>
+                                                <th><fmt:message key="label.order.price" bundle="${rb}"/></th>
+                                                <th><fmt:message key="label.order.amount" bundle="${rb}"/></th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <c:forEach items="${order.value}" var="dish">
+                                                <tr>
+                                                    <th><img src="${dish.key.picture}" alt="<fmt:message key="label.foodcort.picture" bundle="${rb}"/>"></th>
+                                                    <th>${dish.key.name}</th>
+                                                    <th>
+                                                        <div class="drop dropdown show">
+                                                            <a class="btn btn-secondary dropdown-toggle" id="${dish.key.kitchen.name}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <span>${dish.key.kitchen.name}<span>
+                                                            </a>
 
-
-
-
-
+                                                            <div class="dropdown-menu" aria-labelledby="${dish.key.kitchen.name}">
+                                                                <table class="table table-striped table-bordered table-condensed">
+                                                                    <thead>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <th><img src="${dish.key.kitchen.picture}" alt="Картинка заведения"></th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>${dish.key.kitchen.phone}</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>${dish.key.kitchen.site}</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>${dish.key.kitchen.address}</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>${dish.key.kitchen.email}</th>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th>${dish.key.price}</th>
+                                                    <th>${dish.value}</th>
+                                                </tr>
+                                            </c:forEach>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <c:if test="${order.key.paid == false}">
+                                    <span><fmt:message key="label.order.notpaid" bundle="${rb}"/></span>
+                                </c:if>
+                                <c:if test="${order.key.paid == true}">
+                                    <span><fmt:message key="label.order.paid" bundle="${rb}"/></span>
+                                </c:if>
+                            </td>
+                            <td>
+                                <c:if test="${order.key.deliveryStatus == false && order.key.paid == true}">
+                                    <fmt:message key="label.order.notdelivered" bundle="${rb}"/>
+                                </c:if>
+                                <c:if test="${order.key.paid == false}">
+                                    <span><fmt:message key="label.order.notpaid" bundle="${rb}"/></span>
+                                </c:if>
+                                <c:if test="${order.key.deliveryStatus == true}">
+                                    <span><fmt:message key="label.order.delivered" bundle="${rb}"/></span>
+                                </c:if>
+                            </td>
+                            <td>${order.key.date}</td>
+                            <td>${order.key.deliveryDate}</td>
+                            <td>${order.key.price}</td>
+                            <td>
+                                <ctg:refuse deliveryDate="${order.key.deliveryDate}" paid="${order.key.paid}" delivery="${order.key.deliveryStatus}" orderId="${order.key.id}" buttonName="${sessionScope.locale}"/>
+                            </td>
+                        </tr>
+                    </c:forEach>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
 </div> <!-- /container -->
 
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="../../bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
-<script src="../../bootstrap-3.3.7/docs/assets/js/docs.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="../../bootstrap-3.3.7/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+<jsp:include page="/jsp/client/pagepart/footer.jsp"/>
 </body>
 </html>
 

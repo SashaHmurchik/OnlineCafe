@@ -14,37 +14,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../bootstrap-3.3.7/docs/favicon.ico">
+    <link rel="icon" href="../../fonts/favicon.ico">
 
     <title>Orders</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="../../bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap theme -->
-    <link href="../../bootstrap-3.3.7/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../bootstrap-3.3.7/docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="../../css/theme.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../bootstrap-3.3.7/docs/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../bootstrap-3.3.7/docs/assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <style>
-        .sort {
-            margin: auto;
-            text-align: center;
-            padding: 20px;
-        }
-
-    </style>
 
 </head>
 
@@ -53,65 +25,115 @@
 <jsp:include page="/jsp/admin/pagepart/header.jsp"/>
 
 <div class="container theme-showcase" role="main">
+
     <div class="row">
-        <div class="col-md-12">
-            <h3>${orderFindStatus}</h3>
-            <h3>${deliveryCommandStatus}</h3>
-            <h3>${paidCommandStatus}</h3>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <c:if test="${not empty sessionScope.orderFindStatus}">
+                <div class="alert alert-success" role="alert">${sessionScope.orderFindStatus}</div>
+                <c:remove var="orderFindStatus" scope="session" />
+            </c:if>
+            <c:if test="${not empty requestScope.orderFindStatus}">
+                <div class="alert alert-success" role="alert">${requestScope.orderFindStatus}</div>
+                <c:remove var="orderFindStatus" scope="request" />
+            </c:if>
+            <c:if test="${not empty sessionScope.deliveryCommandStatus}">
+                <div class="alert alert-success" role="alert">${sessionScope.deliveryCommandStatus}</div>
+                <c:remove var="deliveryCommandStatus" scope="session" />
+            </c:if>
+            <c:if test="${not empty sessionScope.paidCommandStatus}">
+                <div class="alert alert-success" role="alert">${sessionScope.paidCommandStatus}</div>
+                <c:remove var="paidCommandStatus" scope="session" />
+            </c:if>
+
         </div>
+        <div class="col-md-4"></div>
     </div>
-    <c:if test="${not empty sessionScope.orderFindStatus}">
-        <c:remove var="orderFindStatus" scope="session" />
-    </c:if>
-    <c:if test="${not empty sessionScope.deliveryCommandStatus}">
-        <c:remove var="deliveryCommandStatus" scope="session" />
-    </c:if>
-    <c:if test="${not empty sessionScope.paidCommandStatus}">
-        <c:remove var="paidCommandStatus" scope="session" />
-    </c:if>
+
     <div class="row">
+
         <div clas="col-md-12">
-            <div class="sort">
-                <form class="form-inline form-sort">
-                    <input type="hidden" name="command" value="SORTORDERMAP"/>
-                    <select class="form-control mb-2 mr-sm-2 mb-sm-0" name="sort" >
-                        <option value="paid">Pay status
-                        <option value ="del_date">Delivery Date
-                    </select>
-                    <input type="submit" class="btn btn-primary" value="Sort">
+            <div class="center">
+                <form class="form-inline" action="/controller">
+                    <input type="hidden" name="command" value="showorderbydate" />
+                    <label for="from"><fmt:message key="label.order.from" bundle="${rb}"/></label>
+                    <input type="date" id="from" name="startDate" value="${user.availableForDeliveryDays[0]}" />
+                    <label for="to"><fmt:message key="label.order.to" bundle="${rb}"/></label>
+                    <input type="date" id="to" name="endDate" value="${user.availableForDeliveryDays[0]}" />
+                    <button type="submit" class="btn btn-primary"><fmt:message key="label.foodcort.show_button" bundle="${rb}"/></button>
                 </form>
             </div>
+            <div class="center">
+                <form class="form-inline form-sort" method="get" action="/controller">
+                    <input type="hidden" name="command" value="sortordermap"/>
+                    <select class="form-control mb-2 mr-sm-2 mb-sm-0" name="sort" >
+                        <option selected value="paid"><fmt:message key="label.order.paystatus" bundle="${rb}"/>
+                        <option value ="del_date"><fmt:message key="label.order.deliverydate" bundle="${rb}"/>
+                    </select>
+                    <input type="submit" class="btn btn-primary" value="<fmt:message key="label.foodcort.sort" bundle="${rb}"/>">
+                </form>
+            </div>
+
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
-            <table class="table table-striped table-bordered table-condensed" >
+            <table class="table table-striped table-bordered table-condensed">
                 <thead>
                 <tr>
-                    <th>Client</th>
-                    <th>Pay Status</th>
-                    <th>Delivery Status</th>
-                    <th>Date</th>
-                    <th>DeliveryDate</th>
-                    <th>Price</th>
+                    <th><fmt:message key="label.order.client" bundle="${rb}"/></th>
+                    <th><fmt:message key="label.order.paystatus" bundle="${rb}"/></th>
+                    <th><fmt:message key="label.order.deliverystatus" bundle="${rb}"/></th>
+                    <th><fmt:message key="label.order.orderdate" bundle="${rb}"/></th>
+                    <th><fmt:message key="label.order.deliverydate" bundle="${rb}"/></th>
+                    <th><fmt:message key="label.order.price" bundle="${rb}"/></th>
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach items="${orderMap}" var="order">
+                <c:forEach items="${sessionScope.orderMap}" var="order">
                     <tr class="first">
                         <td>
-                            <div class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                    ${order.key.user.name} <span class="caret"></span>
+                            <div class="dropdown show">
+                                <a class="btn btn-secondary dropdown-toggle" id="${order.key.user.name}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <strong>${order.key.user.name}</strong>
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li>Surname - ${order.key.user.surname}</li>
-                                    <li>Loyalty points - ${order.key.user.loyaltyPoint}</li>
-                                    <li>Email - ${order.key.user.mail}</li>
-                                    <li>Phone - ${order.key.user.phone}</li>
-                                    <li>Passport - ${order.key.user.passport}</li>
-                                </ul>
 
+                                <div class="dropdown-menu" aria-labelledby="${order.key.user.name}">
+                                    <table class="table table-striped table-bordered table-condensed">
+                                        <thead>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th><fmt:message key="label.registration.surname" bundle="${rb}"/></th>
+                                                <th>${order.key.user.surname}</th>
+                                            </tr>
+                                            <tr>
+                                                <th><fmt:message key="label.registratiion.loyaltypoints" bundle="${rb}"/></th>
+                                                <th>
+                                                    ${order.key.user.loyaltyPoint}
+                                                    <form method="get" action="/controller">
+                                                        <input type="hidden" name="command" value="updateloyaltypoint">
+                                                        <input type="hidden" name="user_id" value=${order.key.user.id} />
+                                                        <button type="submit" class="btn btn-success" name="loyalty_status" value="+" onclick="return confirm('<fmt:message key="label.message.areyousure" bundle="${rb}"/>')">+</button>
+                                                        <button type="submit" class="btn btn-success" name="loyalty_status" value="-" onclick="return confirm('<fmt:message key="label.message.areyousure" bundle="${rb}"/>')">-</button>
+                                                    </form>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th><fmt:message key="label.registration.email" bundle="${rb}"/></th>
+                                                <th>${order.key.user.mail}</th>
+                                            </tr>
+                                            <tr>
+                                                <th><fmt:message key="label.registration.phone" bundle="${rb}"/></th>
+                                                <th>${order.key.user.phone}</th>
+                                            </tr>
+                                            <tr>
+                                                <th><fmt:message key="label.registration.passport" bundle="${rb}"/></th>
+                                                <th>${order.key.user.passport}</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </td>
                         <td>
@@ -119,11 +141,11 @@
                                 <form class="form-inline" action="/controller">
                                     <input type="hidden" name="command" value="payadmin" />
                                     <input type="hidden" name="orderId" value=${order.key.id} />
-                                    <button type="submit" class="btn btn-success" onclick="return confirm('Are you sure yau want to pay?')">Pay</button>
+                                    <button type="submit" class="btn btn-success" onclick="return confirm('<fmt:message key="label.message.areyousure" bundle="${rb}"/>')"><fmt:message key="label.order.pay" bundle="${rb}"/></button>
                                 </form>
                             </c:if>
                             <c:if test="${order.key.paid == true}">
-                                <span>Paid</span>
+                                <span><fmt:message key="label.order.paid" bundle="${rb}"/></span>
                             </c:if>
                         </td>
                         <td>
@@ -131,14 +153,14 @@
                                 <form class="form-inline" action="/controller">
                                     <input type="hidden" name="command" value="deliver" />
                                     <input type="hidden" name="orderId" value=${order.key.id} />
-                                    <button type="submit" class="btn btn-success" onclick="return confirm('Are you sure yau want to delivery?')">Deliver</button>
+                                    <button type="submit" class="btn btn-success" onclick="return confirm('<fmt:message key="label.message.areyousure" bundle="${rb}"/>')"><fmt:message key="label.order.deliver" bundle="${rb}"/></button>
                                 </form>
                             </c:if>
                             <c:if test="${order.key.paid == false}">
-                                <span>Not paid</span>
+                                <span><fmt:message key="label.order.notpaid" bundle="${rb}"/></span>
                             </c:if>
                             <c:if test="${order.key.deliveryStatus == true}">
-                                <span>Delivered</span>
+                                <span><fmt:message key="label.order.delivered" bundle="${rb}"/></span>
                             </c:if>
                         </td>
                         <td>${order.key.date}</td>
@@ -150,27 +172,57 @@
                         <td>
 
                             <div class="dropdown show">
-                                <a class="btn btn-secondary dropdown-toggle" id=${order.key.id} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dishes
+                                <a class="btn btn-secondary dropdown-toggle" id="${order.key.id}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span><fmt:message key="label.order.dishes" bundle="${rb}"/></span>
                                 </a>
 
-                                <div class="dropdown-menu" aria-labelledby=${order.key.id}>
-                                    <table class="table">
+                                <div class="dropdown-menu" aria-labelledby="${order.key.id}">
+                                    <table class="table table-striped table-bordered table-condensed">
                                         <thead>
                                         <tr>
-                                            <th>Picture</th>
-                                            <th>Name</th>
-                                            <th>Kitchen Name</th>
-                                            <th>Price</th>
-                                            <th>Amount</th>
+                                            <th><fmt:message key="label.foodcort.picture" bundle="${rb}"/></th>
+                                            <th><fmt:message key="label.foodcort.dishname" bundle="${rb}"/></th>
+                                            <th><fmt:message key="label.foodcort.kitchen" bundle="${rb}"/></th>
+                                            <th><fmt:message key="label.foodcort.price" bundle="${rb}"/></th>
+                                            <th><fmt:message key="label.order.amount" bundle="${rb}"/></th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <c:forEach items="${order.value}" var="dish">
                                             <tr>
-                                                <th><img src="/${dish.key.picture}" alt="Картинка блюда"></th>
+                                                <th><img src="${dish.key.picture}" alt="Картинка блюда"></th>
                                                 <th>${dish.key.name}</th>
-                                                <th>${dish.key.kitchen.name}</th>
+                                                <th>
+                                                    <div class="drop dropdown show">
+                                                        <a class="btn btn-secondary dropdown-toggle" id="${dish.key.kitchen.name}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <span>${dish.key.kitchen.name}<span>
+                                                        </a>
+
+                                                        <div class="dropdown-menu" aria-labelledby="${dish.key.kitchen.name}">
+                                                            <table class="table table-striped table-bordered table-condensed">
+                                                                <thead>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th><img src="${dish.key.kitchen.picture}" alt="Картинка заведения"></th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>${dish.key.kitchen.phone}</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>${dish.key.kitchen.site}</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>${dish.key.kitchen.address}</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>${dish.key.kitchen.email}</th>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </th>
                                                 <th>${dish.key.price}</th>
                                                 <th>${dish.value}</th>
                                             </tr>
@@ -186,27 +238,11 @@
                 </tbody>
             </table>
         </div>
-
     </div>
 
 
-
-
-
-
-
-
-
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="../../bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
-<script src="../../bootstrap-3.3.7/docs/assets/js/docs.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="../../bootstrap-3.3.7/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+</div>
+    <jsp:include page="/jsp/admin/pagepart/footer.jsp"/>
 </body>
 </html>
 

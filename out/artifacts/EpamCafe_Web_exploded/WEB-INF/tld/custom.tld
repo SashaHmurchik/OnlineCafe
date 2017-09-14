@@ -11,4 +11,54 @@
         <tag-class>by.epam.cafe.tag.InfoTimeTag</tag-class>
         <body-content>empty</body-content>
     </tag>
+    <tag>
+        <name>to-archive</name>
+        <tag-class>by.epam.cafe.tag.ArchiveTag</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>statusMarker</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>locale</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>entityMarker</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <name>refuse</name>
+        <tag-class>by.epam.cafe.tag.RefuseOrderTag</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>deliveryDate</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>paid</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>delivery</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>orderId</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>buttonName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
 </taglib>

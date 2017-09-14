@@ -14,120 +14,95 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../bootstrap-3.3.7/docs/favicon.ico">
+    <link rel="icon" href="../../fonts/favicon.ico">
 
     <title>Admincort</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../../bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap theme -->
-    <link href="../../bootstrap-3.3.7/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../bootstrap-3.3.7/docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="../../css/theme.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../bootstrap-3.3.7/docs/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../bootstrap-3.3.7/docs/assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <style type="text/css">
-        img {
-            width: 120px;
-            height: 120px;
-        }
-    </style>
 </head>
 
 <body>
 <jsp:include page="/jsp/admin/pagepart/header.jsp"/>
-<div class="container theme-showcase" role="main">
-    <form class="form-inline" action="/controller">
-        <input type="hidden" name="command" value="FindUserBySurname" />
-        <label class="sr-only" for="inlineFormInput">Surname</label>
-        <input type="text" name="surname" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Vasia Pupkin">
-        <button type="submit" class="btn btn-primary">Найти</button>
-    </form>
-    <br>
-    <div class="row">
-        <div class="col-md-2">
-            <form class="form-inline" action="/controller">
-                <input type="hidden" name="command" value="FINDUSERBYSURNAME" />
-                <input type="hidden" name="surname" value="allusers" />
-                <button type="submit" class="btn btn-primary">Show All Users</button>
-            </form>
-        </div>
-        <div class="col-md-2">
-            <form class="form-inline" action="/controller">
-                <input type="hidden" name="command" value="SHOWORDERBYDATE" />
-                <input type="date" name="startDate" value="${user.availableForDeliveryDays[0]}" />
-                <input type="date" name="endDate" value="${user.availableForDeliveryDays[0]}" />
-                <button type="submit" class="btn btn-primary">Show Orders</button>
-            </form>
-        </div>
-    </div>
+    <div class="container theme-showcase" role="main">
 
-
-    <div class="row">
-        <div class="col-md-12">
-            <h5>${findUserStatus}</h5>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <c:if test="${not empty sessionScope.findUserStatus}">
+                    <div class="alert alert-success" role="alert">${sessionScope.findUserStatus}</div>
+                    <c:remove var="findUserStatus" scope="session" />
+                </c:if>
+                <c:if test="${not empty requestScope.findUserStatus}">
+                    <div class="alert alert-danger" role="alert">${requestScope.findUserStatus}</div>
+                    <c:remove var="findUserStatus" scope="request" />
+                </c:if>
+                <form class="form-inline" action="/controller">
+                    <input type="hidden" name="command" value="finduserbysurname" />
+                    <input type="hidden" name="surname" value="allusers" />
+                    <button type="submit" class="btn btn-primary"><fmt:message key="label.admimcort.showallusers" bundle="${rb}"/></button>
+                </form>
+                <br/>
+                <form class="form-inline" action="/controller">
+                    <input type="hidden" name="command" value="finduserbysurname" />
+                    <label class="sr-only" for="inlineFormInput"><fmt:message key="label.registration.surname" bundle="${rb}"/></label>
+                    <input type="text" name="surname" class="form-control" id="inlineFormInput" required placeholder="Блинов" pattern="^[А-ЯA-Z][a-яa-z]{2,24}(-[А-ЯA-Z][a-яa-z]{2,12})?"/>
+                    <p class="help-block"><fmt:message key="label.user.find.by.surname.help" bundle="${rb}"/></p>
+                    <button type="submit" class="btn btn-primary"><fmt:message key="label.foodcort.show_button" bundle="${rb}"/></button>
+                </form>
+            </div>
+            <div class="col-md-4"></div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-md-12">
-            <table class="table">
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Surname</th>
-                    <th>Passport</th>
-                    <th>Email</th>
-                    <th>Orders</th>
-                </tr>
-                </thead>
-                <tbody>
-                <c:forEach items="${userList}" var="user">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped table-bordered table-condensed">
+                    <thead>
                     <tr>
-                        <td>${user.id}</td>
-                        <td>${user.name}</td>
-                        <td>${user.surname}</td>
-                        <td>${user.passport}</td>
-                        <td>${user.mail}</td>
-                        <td>
-                            <form class="form-inline" action="/controller">
-                                <input type="hidden" name="command" value="showorders" />
-                                <input type="hidden" name="clientId" value=${user.id} />
-                                <button type="submit" class="btn btn-primary">Show Orders</button>
-                            </form>
-                        </td>
+                        <th><fmt:message key="label.registration.name" bundle="${rb}"/></th>
+                        <th><fmt:message key="label.registration.surname" bundle="${rb}"/></th>
+                        <th><fmt:message key="label.registratiion.loyaltypoints" bundle="${rb}"/></th>
+                        <th><fmt:message key="label.registration.passport" bundle="${rb}"/></th>
+                        <th><fmt:message key="label.registration.email" bundle="${rb}"/></th>
+                        <th><fmt:message key="label.registration.phone" bundle="${rb}"/></th>
+                        <th><fmt:message key="label.navbar.admin.orders" bundle="${rb}"/></th>
                     </tr>
-                </c:forEach>
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                    <c:forEach items="${userList}" var="user">
+                        <tr>
+                            <td>${user.name}</td>
+                            <td>${user.surname}</td>
+                            <th>
+                                <div class="dropdown show">
+                                    <a class="btn btn-secondary dropdown-toggle" id="${user.id}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <strong>${user.loyaltyPoint}</strong>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="${user.id}">
+                                        <form method="get" action="/controller">
+                                            <input type="hidden" name="command" value="updateloyaltypoint">
+                                            <input type="hidden" name="user_id" value=${user.id} />
+                                            <button type="submit" class="btn btn-success" name="loyalty_status" value="+" onclick="return confirm('Are you sure?')">+</button>
+                                            <button type="submit" class="btn btn-success" name="loyalty_status" value="-" onclick="return confirm('Are you sure?')">-</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </th>
+                            <td>${user.passport}</td>
+                            <td>${user.mail}</td>
+                            <td>${user.phone}</td>
+                            <td>
+                                <form class="form-inline" action="/controller">
+                                    <input type="hidden" name="command" value="showorders" />
+                                    <input type="hidden" name="clientId" value=${user.id} />
+                                    <button type="submit" class="btn btn-primary"><fmt:message key="label.navbar.admin.orders" bundle="${rb}"/></button>
+                                </form>
+                            </td>
+                        </tr>
+                    </c:forEach>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
-
-
-
-</div> <!-- /container -->
-
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="../../bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
-<script src="../../bootstrap-3.3.7/docs/assets/js/docs.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="../../bootstrap-3.3.7/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+    </div> <!-- /container -->
+<jsp:include page="/jsp/admin/pagepart/footer.jsp"/>
 </body>
 </html>
