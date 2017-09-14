@@ -1,10 +1,9 @@
-package by.epam.cafe.factory;
+package by.epam.cafe.command.factory;
 
 import by.epam.cafe.command.AbstractCommand;
 import by.epam.cafe.command.CommandMap;
 import by.epam.cafe.constant.SessionAtr;
 import by.epam.cafe.content.RequestContent;
-import by.epam.cafe.resource.ConfigurationManager;
 import by.epam.cafe.resource.MessageManager;
 
 

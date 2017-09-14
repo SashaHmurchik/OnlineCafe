@@ -7,195 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e7c91d3-1753-495e-81c7-1569e3d9a761" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/command/AbstractCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/command/CommandMap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/command/CommandType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/constant/RequestParam.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/constant/SessionAtr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/constant/SignUpAtr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/content/NavigationType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/content/RequestContent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/content/RequestResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/dao/AbstractDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/dao/CategoryDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/dao/DishDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/dao/KitchenDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/dao/OrderDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/dao/TransactionHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/dao/UserDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/dao/impl/CategoryDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/dao/impl/DishDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/dao/impl/KitchenDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/dao/impl/OrderDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/dao/impl/ResultSetConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/dao/impl/UserDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/entity/Dish.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/entity/Entity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/entity/Kitchen.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/entity/Order.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/entity/OrderDish.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/entity/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/exception/CommandException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/exception/ConnectionPoolException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/exception/DAOException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/exception/ReceiverException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/factory/FactoryCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/pool/ConnectionCreator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/pool/ConnectionPool.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/pool/InitDB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/pool/ProxyConnection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/receiver/DishReceiver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/receiver/OrderReceiver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/receiver/Receiver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/receiver/UserReceiver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/receiver/Validator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/receiver/impl/DishReceiverImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/receiver/impl/OrderReceiverImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/receiver/impl/UserReceiverImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/resource/ConfigurationManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/resource/MessageManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/tag/InfoTimeTag.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/util/DateParser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/util/HashPassword.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/by/epam/cafe/util/OrderMapSorter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/config.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/dbconnection_config.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/log4j2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/pagecontent_en_US.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/pagecontent_ru_RU.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/resources/config.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/resources/dbconnection_config.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/resources/log4j2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/resources/pagecontent_en_US.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/classes/resources/pagecontent_ru_RU.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/lib/annotations-java5-15.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/lib/log4j-api-2.8.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/lib/log4j-core-2.8.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/tld/custom.tld" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/css/bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/css/signin.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/css/theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/js/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/jsp/admin/admincort.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/jsp/admin/orders.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/jsp/admin/pagepart/header.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/jsp/client/basket.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/jsp/client/foodcort.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/jsp/client/myorders.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/jsp/client/pagepart/header.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/jsp/error/error.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/jsp/login.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/jsp/pagepart/header.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/EpamCafe_Web_exploded/jsp/registration.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/command/AddToBasketCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/command/DeliverOrderCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/command/FindUserBySurnameCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/command/LocaleCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/command/LoginCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/command/LogoutCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/command/MakeOrderCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/command/PayForOrderByAdminCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/command/RemoveFromBasketCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/command/ShowDishCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/command/ShowMyOrderCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/command/ShowOrderByDateCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/command/ShowOrdersCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/command/SignUpCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/command/SortOrderMapCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/controller/filter/EncodingFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/controller/filter/SecurityFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/controller/listener/HttpSessionAttributeListenerImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/controller/servlet/Controller.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/controller/servlet/UploadController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/entity/charackter/Category.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/epam/cafe/entity/charackter/Role.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/AbstractCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/CommandMap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/CommandType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/constant/RequestParam.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/constant/SessionAtr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/constant/SignUpAtr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/content/NavigationType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/content/RequestContent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/content/RequestResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/AbstractDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/CategoryDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/DishDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/KitchenDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/OrderDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/TransactionHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/UserDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/impl/CategoryDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/impl/DishDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/impl/KitchenDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/impl/OrderDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/impl/ResultSetConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/impl/UserDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/entity/Dish.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/entity/Entity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/entity/Kitchen.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/entity/Order.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/entity/OrderDish.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/entity/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/exception/CommandException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/exception/ConnectionPoolException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/exception/DAOException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/exception/ReceiverException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/factory/FactoryCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/pool/ConnectionCreator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/pool/ConnectionPool.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/pool/InitDB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/pool/ProxyConnection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/DishReceiver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/OrderReceiver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/Receiver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/UserReceiver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/Validator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/impl/DishReceiverImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/impl/OrderReceiverImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/impl/UserReceiverImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/resource/ConfigurationManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/resource/MessageManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/tag/InfoTimeTag.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/util/DateParser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/util/HashPassword.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/epam/cafe/util/OrderMapSorter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/config.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/dbconnection_config.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pagecontent_en_US.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pagecontent_ru_RU.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/resources/config.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/resources/dbconnection_config.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/resources/log4j2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/resources/pagecontent_en_US.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/resources/pagecontent_ru_RU.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/epam-cafe-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/LoginCommand.java" afterPath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/LoginCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/pagecontent_en_US.properties" afterPath="$PROJECT_DIR$/src/main/resources/pagecontent_en_US.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/pagecontent_ru_RU.properties" afterPath="$PROJECT_DIR$/src/main/resources/pagecontent_ru_RU.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/controller/Controller.java" afterPath="$PROJECT_DIR$/src/main/by/epam/cafe/controller/Controller.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/factory/FactoryCommand.java" afterPath="$PROJECT_DIR$/src/main/by/epam/cafe/command/factory/FactoryCommand.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -266,10 +80,10 @@
         </entry>
       </file>
       <file leaf-file-name="FactoryCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/by/epam/cafe/factory/FactoryCommand.java">
+        <entry file="file://$PROJECT_DIR$/src/main/by/epam/cafe/command/factory/FactoryCommand.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="93">
-              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -515,6 +329,51 @@
             <path>
               <item name="EpamCafe" type="b2602c69:ProjectViewProjectNode" />
               <item name="EpamCafe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EpamCafe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EpamCafe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EpamCafe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EpamCafe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EpamCafe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EpamCafe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="by" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EpamCafe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EpamCafe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="by" type="462c0819:PsiDirectoryNode" />
+              <item name="epam" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EpamCafe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EpamCafe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="by" type="462c0819:PsiDirectoryNode" />
+              <item name="epam" type="462c0819:PsiDirectoryNode" />
+              <item name="cafe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EpamCafe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EpamCafe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="by" type="462c0819:PsiDirectoryNode" />
+              <item name="epam" type="462c0819:PsiDirectoryNode" />
+              <item name="cafe" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EpamCafe" type="b2602c69:ProjectViewProjectNode" />
@@ -994,7 +853,7 @@
       <workItem from="1504742612954" duration="9586000" />
       <workItem from="1505131349120" duration="1607000" />
       <workItem from="1505164730964" duration="519000" />
-      <workItem from="1505387003182" duration="4388000" />
+      <workItem from="1505387003182" duration="6196000" />
     </task>
     <task id="LOCAL-00001" summary="14/10/17">
       <created>1505389812420</created>
@@ -1003,7 +862,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505389812420</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="14/10/217">
+      <created>1505391536116</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1505391536116</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1039,7 +905,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="853805000" />
+    <option name="totallyTimeSpent" value="855613000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1092,7 +958,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="14/10/17" />
-    <option name="LAST_COMMIT_MESSAGE" value="14/10/17" />
+    <MESSAGE value="14/10/217" />
+    <option name="LAST_COMMIT_MESSAGE" value="14/10/217" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1468,10 +1335,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/by/epam/cafe/factory/FactoryCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/by/epam/cafe/command/factory/FactoryCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>

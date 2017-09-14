@@ -5,7 +5,7 @@ import by.epam.cafe.content.NavigationType;
 import by.epam.cafe.content.RequestContent;
 import by.epam.cafe.content.RequestResult;
 import by.epam.cafe.exception.CommandException;
-import by.epam.cafe.factory.FactoryCommand;
+import by.epam.cafe.command.factory.FactoryCommand;
 import by.epam.cafe.pool.ConnectionPool;
 import by.epam.cafe.resource.ConfigurationManager;
 import by.epam.cafe.resource.MessageManager;
