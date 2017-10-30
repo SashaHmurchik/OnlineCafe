@@ -64,7 +64,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><fmt:message key="label.navbar.admin.show"  bundle="${rb}"/><span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/controller?command=showdish"><fmt:message key="label.navbar.admin.dishes"  bundle="${rb}"/></a></li>
+                        <li><a href="/controller?command=showdish&current_page=1"><fmt:message key="label.navbar.admin.dishes"  bundle="${rb}"/></a></li>
                         <li><a href="/controller?command=showcategory&archive_status=false"><fmt:message key="label.navbar.admin.categorys"  bundle="${rb}"/></a></li>
                         <li><a href="/controller?command=showkitchen&archive_status=false"><fmt:message key="label.navbar.admin.kitchens"  bundle="${rb}"/></a></li>
                     </ul>

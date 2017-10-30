@@ -58,6 +58,7 @@
                         <option value="${kitchen.id}">${kitchen.name}</option>
                     </c:forEach>
                 </select>
+                <input type="hidden" name="current_page" value="1"/>
                 <br/>
                 <input type="submit" value=<fmt:message key="label.foodcort.show_button" bundle="${rb}"/> >
             </form>
@@ -130,6 +131,25 @@
                         </tr>
                     </c:forEach>
                     </tbody>
+                </table>
+                <table border="1" cellpadding="5" cellspacing="5">
+                    <tr>
+                        <c:forEach begin="1" end="${noOfPages}" var="i">
+                            <c:choose>
+                                <c:when test="${current_page eq i}">
+                                    <td>${i}</td>
+                                </c:when>
+                                <c:otherwise>
+                                    <c:if test="${current_page eq i}">
+                                        <td><h2>${i}</h2></td>
+                                    </c:if>
+                                    <c:if test="${current_page != i}">
+                                        <td><a href="${urlForPagination}current_page=${i}">${i}</a></td>
+                                    </c:if>
+                                </c:otherwise>
+                            </c:choose>
+                        </c:forEach>
+                    </tr>
                 </table>
             </div>
         </div>

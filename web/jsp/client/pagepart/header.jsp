@@ -52,7 +52,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="/controller?command=showdish"><fmt:message key="label.navbar.foodcort"  bundle="${rb}"/></a></li>
+                <li><a href="/controller?command=showdish&current_page=1"><fmt:message key="label.navbar.foodcort"  bundle="${rb}"/></a></li>
                 <li><a href="/controller?command=showmyorder"><fmt:message key="label.navbar.order"  bundle="${rb}"/></a></li>
                 <li><a href="/jsp/client/myaccount.jsp"><fmt:message key="label.navbar.account"  bundle="${rb}"/></a></li>
                 <li><a href="/jsp/client/basket.jsp"><fmt:message key="label.navbar.basket"  bundle="${rb}"/><span class="badge">${sessionScope.user.basketCapacity}</span></a></li>

@@ -186,40 +186,4 @@ public class SecurityFilter implements Filter {
 
 
 
-//@WebFilter(urlPatterns = {"/jsp/admin/*",
-//        "/jsp/client/*"})
-//
-//public class  SecurityFilter implements Filter {
-//
-//    public void init(FilterConfig fConfig) throws ServletException {
-//    }
-//
-//    public void doFilter(ServletRequest request, ServletResponse response,
-//                         FilterChain chain) throws IOException, ServletException {
-//
-//        HttpServletRequest httpServletRequest = (HttpServletRequest) request;
-//        HttpServletResponse httpServletResponse = (HttpServletResponse) response;
-//
-//        String URI = httpServletRequest.getRequestURI();
-//
-//        HttpSession session = httpServletRequest.getSession();
-//        User user = (User) session.getAttribute(SessionAtr.USER);
-//
-//        //TODO add pattern /controller except signin and signout (find_info_for_admin_account)
-//        if (user == null) {
-//            httpServletResponse.sendRedirect("/index.jsp");
-//            return;
-//        } else if (URI.startsWith("/jsp/admin") && user.getRole() != Role.ADMIN ) {
-//            httpServletResponse.sendRedirect("/index.jsp");
-//            return;
-//        } else if (URI.startsWith("/jsp/client") && user.getRole() != Role.CLIENT ) {
-//            httpServletResponse.sendRedirect("/index.jsp");
-//            return;
-//        }
-//        chain.doFilter(request, response);
-//    }
-//
-//    public void destroy() {
-//
-//    }
-//}
+

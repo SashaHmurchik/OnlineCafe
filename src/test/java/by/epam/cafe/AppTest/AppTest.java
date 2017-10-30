@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 @Suite.SuiteClasses({
-        ConnectionPoolTest.class,
+//        ConnectionPoolTest.class,
         PassportValidTest.class,
         PassportValidTest2.class,
         PhoneValidTest.class,
@@ -22,7 +22,7 @@ import org.junit.runners.Suite;
         ValidatorTest.class,
         ValidatorTest2.class,
         HashPasswordTest.class,
-        SenderTest.class
+//        SenderTest.class
         })
 
 @RunWith(Suite.class)

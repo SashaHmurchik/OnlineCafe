@@ -15,7 +15,10 @@ import by.epam.cafe.receiver.CategoryReceiver;
 import by.epam.cafe.receiver.DishReceiver;
 import by.epam.cafe.receiver.KitchenReceiver;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class DishReceiverImpl implements DishReceiver {
     private static final String KITCHEN_PARAMETER = "kitchen";
@@ -77,8 +80,50 @@ public class DishReceiverImpl implements DishReceiver {
         } catch (DAOException e) {
             throw new ReceiverException("Problem when dish Logic :", e);
         }
+        /////////////////////
+        if (!dishList.isEmpty()) {
+            int noOfItemsPerPage = 5;
+            Integer currentPage = Integer.parseInt(content.getRequestParameters().get("current_page")[0]);
+            int noOfPages = dishList.size() / noOfItemsPerPage;
+            if (dishList.size() % noOfItemsPerPage != 0) {
+                noOfPages += 1;
+            }
+            List<Dish> currentDishList = new ArrayList<>();
+            int end = 0;
+            if (currentPage == noOfPages) {
+                end = dishList.size();
+            } else {
+                end = currentPage * noOfItemsPerPage;
+            }
+            int start = end - noOfItemsPerPage;
+            if (start < 0) {
+                start = 0;
+            }
+            for (int i = start; i < end; i++) {
+                currentDishList.add(dishList.get(i));
+            }
+            String url = "";
+            Pattern pattern = Pattern.compile("command=showdish");
+            Matcher matcher = pattern.matcher(content.getUrl());
+            if (matcher.find()) {
+                String[] splitedUrl = content.getUrl().split("&");
+                for (int i = 0; i < splitedUrl.length-1; i++) {
+                    url = url.concat(splitedUrl[i] + "&");
+                }
+            } else {
+                url = "http://localhost:8080/controller?command=showdish&";
+            }
 
-        content.setRequestAttributes(DISH_LIST_PARAMETER, dishList);
+            content.setRequestAttributes(DISH_LIST_PARAMETER, currentDishList);
+            content.setRequestAttributes("noOfPages", noOfPages);
+            content.setRequestAttributes("current_page", currentPage);
+            content.setRequestAttributes("urlForPagination", url);
+        } else {
+            content.setRequestAttributes(DISH_LIST_PARAMETER, dishList);
+        }
+
+        ////////////////////
+        //content.setRequestAttributes(DISH_LIST_PARAMETER, dishList);
     }
 
     @Override
@@ -124,5 +169,11 @@ public class DishReceiverImpl implements DishReceiver {
         }
         helper.endTransaction();
         return result;
+    }
+
+    public static void main(String[] args) {
+        Pattern pattern = Pattern.compile("command=showdish");
+        Matcher matcher = pattern.matcher("http://localhost:8080/controller?command=showdish&");
+        System.out.println(matcher.find());
     }
 }
