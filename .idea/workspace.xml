@@ -6,115 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e7c91d3-1753-495e-81c7-1569e3d9a761" name="Default" comment="30/10/2017">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="2e7c91d3-1753-495e-81c7-1569e3d9a761" name="Default" comment="31/10/2017">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EpamCafe.iml" afterPath="$PROJECT_DIR$/EpamCafe.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logg/warning.log" afterPath="$PROJECT_DIR$/logg/warning.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/by/epam/cafe/AppTest/AppTest.java" afterPath="$PROJECT_DIR$/src/test/java/by/epam/cafe/AppTest/AppTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/by/epam/cafe/pool/ConnectionPoolTest.java" afterPath="$PROJECT_DIR$/src/test/java/by/epam/cafe/pool/ConnectionPoolTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/by/epam/cafe/util/SenderTest.java" afterPath="$PROJECT_DIR$/src/test/java/by/epam/cafe/util/SenderTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/bean/RegistrationBean.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/bean/RegistrationBean.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/AbstractCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/AbstractCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/CommandMap.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/CommandMap.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/CommandType.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/CommandType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/factory/FactoryCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/factory/FactoryCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/AddCategoryCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/AddCategoryCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/AddDishCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/AddDishCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/AddKitchenCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/AddKitchenCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/AddToBasketCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/AddToBasketCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/ChangePasswordCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/ChangePasswordCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/DeliverOrderCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/DeliverOrderCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/EditUserCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/EditUserCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/FindUserBySurnameCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/FindUserBySurnameCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/LocaleCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/LocaleCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/LoginCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/LoginCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/LogoutCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/LogoutCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/MakeOrderCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/MakeOrderCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/PayForOrderByAdminCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/PayForOrderByAdminCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/RefuseTheOrderCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/RefuseTheOrderCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/RemoveFromBasketCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/RemoveFromBasketCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/SendPasswordCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/SendPasswordCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/ShowCategoryCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/ShowCategoryCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/ShowDishCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/ShowDishCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/ShowKitchenCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/ShowKitchenCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/ShowMyOrderCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/ShowMyOrderCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/ShowOrderByDateCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/ShowOrderByDateCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/ShowOrdersCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/ShowOrdersCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/SignUpCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/SignUpCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/SortOrderMapCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/SortOrderMapCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/UpdateArchiveStatusCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/UpdateArchiveStatusCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/UpdateKitchenCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/UpdateKitchenCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/UpdateLoyaltyPiointCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/command/impl/UpdateLoyaltyPiointCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/constant/EntityAtr.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/constant/EntityAtr.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/constant/RequestParam.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/constant/RequestParam.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/constant/SessionAtr.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/constant/SessionAtr.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/constant/SignUpAtr.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/constant/SignUpAtr.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/content/NavigationType.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/content/NavigationType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/content/RequestContent.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/content/RequestContent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/content/RequestResult.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/content/RequestResult.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/controller/Controller.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/controller/Controller.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/controller/UploadController.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/controller/UploadController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/dao/AbstractDAO.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/dao/AbstractDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/dao/CategoryDao.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/dao/CategoryDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/dao/DishDao.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/dao/DishDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/dao/KitchenDao.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/dao/KitchenDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/dao/OrderDao.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/dao/OrderDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/dao/TransactionHelper.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/dao/TransactionHelper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/dao/UserDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/dao/impl/CategoryDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/dao/impl/CategoryDaoImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/dao/impl/DishDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/dao/impl/DishDaoImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/dao/impl/KitchenDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/dao/impl/KitchenDaoImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/dao/impl/OrderDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/dao/impl/OrderDaoImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/dao/impl/ResultSetConverter.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/dao/impl/ResultSetConverter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/dao/impl/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/dao/impl/UserDaoImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/entity/Category.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/entity/Category.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/entity/Dish.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/entity/Dish.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/entity/Entity.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/entity/Entity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/entity/Kitchen.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/entity/Kitchen.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/entity/Order.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/entity/Order.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/entity/OrderDish.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/entity/OrderDish.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/entity/Role.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/entity/Role.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/entity/User.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/exception/CommandException.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/exception/CommandException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/exception/ConnectionPoolException.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/exception/ConnectionPoolException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/exception/DAOException.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/exception/DAOException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/exception/ReceiverException.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/exception/ReceiverException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/filter/BlockedUserFilter.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/filter/BlockedUserFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/filter/EncodingFilter.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/filter/EncodingFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/filter/SecurityFilter.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/filter/SecurityFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/listener/HttpSessionAttributeListenerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/listener/HttpSessionAttributeListenerImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/pool/ConnectionCreator.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/pool/ConnectionCreator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/pool/ConnectionPool.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/pool/ConnectionPool.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/pool/InitDB.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/pool/InitDB.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/pool/ProxyConnection.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/pool/ProxyConnection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/receiver/CategoryReceiver.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/receiver/CategoryReceiver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/receiver/DishReceiver.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/receiver/DishReceiver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/receiver/KitchenReceiver.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/receiver/KitchenReceiver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/receiver/OrderReceiver.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/receiver/OrderReceiver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/receiver/Receiver.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/receiver/Receiver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/receiver/UserReceiver.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/receiver/UserReceiver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/receiver/Validator.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/receiver/Validator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/receiver/impl/CategoryReceiverImpl.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/receiver/impl/CategoryReceiverImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/receiver/impl/DishReceiverImpl.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/receiver/impl/DishReceiverImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/receiver/impl/KitchenReceiverImpl.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/receiver/impl/KitchenReceiverImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/receiver/impl/OrderReceiverImpl.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/receiver/impl/OrderReceiverImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/receiver/impl/ReceiverHelper.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/receiver/impl/ReceiverHelper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/receiver/impl/UserReceiverImpl.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/receiver/impl/UserReceiverImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/resource/ConfigurationManager.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/resource/ConfigurationManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/resource/MessageManager.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/resource/MessageManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/tag/ArchiveTag.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/tag/ArchiveTag.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/tag/InfoTimeTag.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/tag/InfoTimeTag.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/tag/RefuseOrderTag.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/tag/RefuseOrderTag.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/util/DateParser.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/util/DateParser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/util/HashPassword.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/util/HashPassword.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/util/InitSender.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/util/InitSender.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/util/OrderMapSorter.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/util/OrderMapSorter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/util/PasswordCreator.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/util/PasswordCreator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/by/epam/cafe/util/Sender.java" afterPath="$PROJECT_DIR$/src/main/java/by/epam/cafe/util/Sender.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1143,7 +1036,7 @@
       <workItem from="1505671738147" duration="15915000" />
       <workItem from="1506591214660" duration="295000" />
       <workItem from="1509394108822" duration="1148000" />
-      <workItem from="1509450151946" duration="991000" />
+      <workItem from="1509450151946" duration="1192000" />
     </task>
     <task id="LOCAL-00001" summary="14/10/17">
       <created>1505389812420</created>
@@ -1166,7 +1059,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505393999768</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="31/10/2017">
+      <created>1509452497750</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1509452497750</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1202,7 +1102,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="876633000" />
+    <option name="totallyTimeSpent" value="876834000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1267,7 +1167,8 @@
     <MESSAGE value="14/10/17" />
     <MESSAGE value="14/10/217" />
     <MESSAGE value="30/10/2017" />
-    <option name="LAST_COMMIT_MESSAGE" value="30/10/2017" />
+    <MESSAGE value="31/10/2017" />
+    <option name="LAST_COMMIT_MESSAGE" value="31/10/2017" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
