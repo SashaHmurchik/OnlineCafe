@@ -1,11 +1,8 @@
 package by.epam.cafe.tag;
 
-import sun.util.resources.LocaleData;
 
 import java.io.IOException;
 import java.time.LocalDate;
-import java.util.GregorianCalendar;
-import java.util.Locale;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.tagext.TagSupport;

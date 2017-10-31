@@ -14,7 +14,6 @@ import by.epam.cafe.receiver.impl.DishReceiverImpl;
 import by.epam.cafe.receiver.impl.KitchenReceiverImpl;
 import by.epam.cafe.resource.ConfigurationManager;
 import by.epam.cafe.resource.MessageManager;
-import com.sun.deploy.net.cookie.CookieUnavailableException;
 
 public class AddDishCommand extends AbstractCommand {
     private static final String NEW_DISH_PATH = ConfigurationManager.getProperty("path.page.newdish");

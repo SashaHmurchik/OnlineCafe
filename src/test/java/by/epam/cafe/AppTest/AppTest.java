@@ -1,9 +1,9 @@
 package by.epam.cafe.AppTest;
 
-import by.epam.cafe.pool.ConnectionPoolTest;
+//import by.epam.cafe.pool.ConnectionPoolTest;
 import by.epam.cafe.receiver.*;
 import by.epam.cafe.util.HashPasswordTest;
-import by.epam.cafe.util.SenderTest;
+//import by.epam.cafe.util.SenderTest;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 

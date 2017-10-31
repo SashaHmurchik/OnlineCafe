@@ -9,12 +9,9 @@ import by.epam.cafe.exception.CommandException;
 import by.epam.cafe.exception.ReceiverException;
 import by.epam.cafe.receiver.Receiver;
 import by.epam.cafe.receiver.UserReceiver;
-import by.epam.cafe.resource.ConfigurationManager;
 import by.epam.cafe.resource.MessageManager;
-import sun.plugin2.message.Message;
 
-import java.util.Iterator;
-import java.util.Set;
+
 
 public class AddToBasketCommand extends AbstractCommand {
 
