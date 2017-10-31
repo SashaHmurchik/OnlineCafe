@@ -19,7 +19,7 @@ import org.junit.runners.Suite;
         PriceValidTest2.class,
         SiteValidTest.class,
         SiteValidTest2.class,
-        ValidatorTest.class,
+//        ValidatorTest.class,
         ValidatorTest2.class,
         HashPasswordTest.class,
 //        SenderTest.class

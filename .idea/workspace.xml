@@ -7,7 +7,147 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e7c91d3-1753-495e-81c7-1569e3d9a761" name="Default" comment="31/10/2017">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/bean/RegistrationBean.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/AbstractCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/CommandMap.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/CommandType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/factory/FactoryCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/AddCategoryCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/AddDishCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/AddKitchenCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/AddToBasketCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/ChangePasswordCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/DeliverOrderCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/EditUserCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/FindUserBySurnameCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/LocaleCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/LoginCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/LogoutCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/MakeOrderCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/PayForOrderByAdminCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/RefuseTheOrderCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/RemoveFromBasketCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/SendPasswordCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/ShowCategoryCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/ShowDishCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/ShowKitchenCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/ShowMyOrderCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/ShowOrderByDateCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/ShowOrdersCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/SignUpCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/SortOrderMapCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/UpdateArchiveStatusCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/UpdateKitchenCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/command/impl/UpdateLoyaltyPiointCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/constant/EntityAtr.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/constant/RequestParam.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/constant/SessionAtr.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/constant/SignUpAtr.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/content/NavigationType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/content/RequestContent.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/content/RequestResult.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/controller/Controller.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/controller/UploadController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/AbstractDAO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/CategoryDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/DishDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/KitchenDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/OrderDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/TransactionHelper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/UserDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/impl/CategoryDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/impl/DishDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/impl/KitchenDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/impl/OrderDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/impl/ResultSetConverter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/dao/impl/UserDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/entity/Category.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/entity/Dish.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/entity/Entity.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/entity/Kitchen.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/entity/Order.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/entity/OrderDish.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/entity/Role.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/entity/User.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/exception/CommandException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/exception/ConnectionPoolException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/exception/DAOException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/exception/ReceiverException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/filter/BlockedUserFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/filter/EncodingFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/filter/SecurityFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/listener/HttpSessionAttributeListenerImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/pool/ConnectionCreator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/pool/ConnectionPool.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/pool/InitDB.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/pool/ProxyConnection.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/CategoryReceiver.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/DishReceiver.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/KitchenReceiver.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/OrderReceiver.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/Receiver.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/UserReceiver.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/Validator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/impl/CategoryReceiverImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/impl/DishReceiverImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/impl/KitchenReceiverImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/impl/OrderReceiverImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/impl/ReceiverHelper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/receiver/impl/UserReceiverImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/resource/ConfigurationManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/resource/MessageManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/tag/ArchiveTag.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/tag/InfoTimeTag.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/tag/RefuseOrderTag.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/util/DateParser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/util/HashPassword.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/util/InitSender.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/util/OrderMapSorter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/util/PasswordCreator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/util/Sender$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/by/epam/cafe/util/Sender.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/by/epam/cafe/AppTest/AppTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/by/epam/cafe/receiver/PassportValidTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/by/epam/cafe/receiver/PassportValidTest2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/by/epam/cafe/receiver/PhoneValidTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/by/epam/cafe/receiver/PhoneValidTest2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/by/epam/cafe/receiver/PictureNameValid.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/by/epam/cafe/receiver/PictureNameValid2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/by/epam/cafe/receiver/PriceValidTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/by/epam/cafe/receiver/PriceValidTest2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/by/epam/cafe/receiver/SiteValidTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/by/epam/cafe/receiver/SiteValidTest2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/by/epam/cafe/receiver/ValidatorTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/by/epam/cafe/receiver/ValidatorTest2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/by/epam/cafe/util/HashPasswordTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/epam-cafe.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/config.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/dbconnection_config.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/log4j2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/mail.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/pagecontent_en_US.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/pagecontent_ru_RU.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-by.epam.cafe.AppTest.AppTest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-by.epam.cafe.receiver.PassportValidTest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-by.epam.cafe.receiver.PhoneValidTest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-by.epam.cafe.receiver.PriceValidTest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-by.epam.cafe.receiver.SiteValidTest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-by.epam.cafe.receiver.ValidatorTest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-by.epam.cafe.util.HashPasswordTest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/by.epam.cafe.AppTest.AppTest.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/by.epam.cafe.receiver.PassportValidTest.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/by.epam.cafe.receiver.PhoneValidTest.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/by.epam.cafe.receiver.PriceValidTest.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/by.epam.cafe.receiver.SiteValidTest.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/by.epam.cafe.receiver.ValidatorTest.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/by.epam.cafe.util.HashPasswordTest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/by/epam/cafe/AppTest/AppTest.java" afterPath="$PROJECT_DIR$/src/test/java/by/epam/cafe/AppTest/AppTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/by/epam/cafe/receiver/ValidatorTest.java" afterPath="$PROJECT_DIR$/src/test/java/by/epam/cafe/receiver/ValidatorTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -69,12 +209,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+            <state relative-caret-position="360">
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValidatorTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cafe/receiver/ValidatorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="34" column="3" selection-start-line="0" selection-start-column="2" selection-end-line="34" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#980#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,7 +234,7 @@
       <file leaf-file-name="ConnectionPoolTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cafe/pool/ConnectionPoolTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-120">
+            <state relative-caret-position="120">
               <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
               <folding />
             </state>
@@ -99,24 +251,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cafe/AppTest/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+            <state relative-caret-position="306">
+              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="67" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="67" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -182,7 +324,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/by/epam/cafe/command/impl/SortOrderMapCommand.java" />
         <option value="$PROJECT_DIR$/src/main/by/epam/cafe/dao/DishDao.java" />
         <option value="$PROJECT_DIR$/src/main/by/epam/cafe/dao/KitchenDao.java" />
         <option value="$PROJECT_DIR$/src/main/by/epam/cafe/dao/OrderDao.java" />
@@ -231,8 +372,9 @@
         <option value="$PROJECT_DIR$/src/main/by/epam/cafe/receiver/impl/DishReceiverImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/by/epam/cafe/pool/ConnectionPoolTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/by/epam/cafe/util/SenderTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/by/epam/cafe/AppTest/AppTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/cafe/receiver/ValidatorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/cafe/AppTest/AppTest.java" />
       </list>
     </option>
   </component>
@@ -299,7 +441,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1696" />
+    <option name="width" value="1684" />
     <option name="height" value="1026" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -346,13 +488,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="OnlineCafe" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -432,6 +578,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="receiver" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -542,7 +692,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -1036,7 +1186,8 @@
       <workItem from="1505671738147" duration="15915000" />
       <workItem from="1506591214660" duration="295000" />
       <workItem from="1509394108822" duration="1148000" />
-      <workItem from="1509450151946" duration="1192000" />
+      <workItem from="1509450151946" duration="2010000" />
+      <workItem from="1509457843663" duration="1578000" />
     </task>
     <task id="LOCAL-00001" summary="14/10/17">
       <created>1505389812420</created>
@@ -1066,7 +1217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509452497750</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="31/10/2017">
+      <created>1509452580297</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1509452580297</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1102,7 +1260,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="876834000" />
+    <option name="totallyTimeSpent" value="879230000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1114,8 +1272,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1684" height="1026" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1123,14 +1281,14 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18276283" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35834268" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18226601" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34714445" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15647922" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24938424" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1181,7 +1339,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/by/epam/cafe/command/CommandType.java" />
     <entry file="file://$PROJECT_DIR$/src/main/by/epam/cafe/command/AbstractCommand.java" />
     <entry file="file://$PROJECT_DIR$/src/main/by/epam/cafe/constant/EntityAtr.java" />
     <entry file="file://$PROJECT_DIR$/src/main/by/epam/cafe/constant/RequestParam.java" />
@@ -1296,19 +1453,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cafe/AppTest/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cafe/pool/ConnectionPoolTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
+        <state relative-caret-position="120">
           <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
           <folding />
         </state>
@@ -1316,9 +1463,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        <state relative-caret-position="360">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cafe/receiver/ValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="34" column="3" selection-start-line="0" selection-start-column="2" selection-end-line="34" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#980#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/cafe/AppTest/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
